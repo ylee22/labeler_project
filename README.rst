@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ylee22/labeler_project.png?branch=master)](https://travis-ci.org/ylee22/labeler_project/)
+[![Build Status](https://travis-ci.org/totalgood/civicu_app.svg?branch=master)](https://travis-ci.org/totalgood/civicu_app/)
 
 ===============
 class_project_1
