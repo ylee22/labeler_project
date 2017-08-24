@@ -1,4 +1,4 @@
-https://travis-ci.org/ylee22/labeler_project.svg?branch=master
+[![Build Status](https://travis-ci.org/ylee22/labeler_project.svg?branch=master.png)](https://travis-ci.org/ylee22/labeler_project.svg?branch=master)
 
 ===============
 class_project_1
