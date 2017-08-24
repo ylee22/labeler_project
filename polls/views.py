@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect
+from rest_framework import generics
 
 from polls.forms import DocumentForm
 from polls.models import Image
+
+from . import serializers
 
 """ Takes """
 
@@ -22,3 +25,7 @@ def model_form_upload(request):
     return render(request, 'model_form_upload.html', {
         'form': form
     })
+
+class ListImages(generics.ListCreateAPIView):
+    queryset = Image.objects.all()
+    serializer_class = serializers.ImageSerializer

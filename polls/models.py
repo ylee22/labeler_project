@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Image(models.Model):
     """ A database record for uploaded images to be labeled """
-    caption = models.CharField("Description of the image, where and when it was taken",
+    caption = models.CharField("Description of the image",
                                max_length=512, default=None, null=True)
     uploaded_by = models.ForeignKey(User, default=None, null=True)
     file = models.FileField("Select file to upload", upload_to='images')
