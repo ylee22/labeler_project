@@ -29,7 +29,7 @@ if [[ "$DISTRIB" == "conda" ]]; then
     source activate testenv
 
 elif [[ "$DISTRIB" == "ubuntu" ]]; then
-    # Use standard ubuntu packages in their default version
+    echo "stupid bug"
 fi
 
 if [[ "$COVERAGE" == "true" ]]; then
