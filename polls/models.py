@@ -22,11 +22,3 @@ class TotalVotes(models.Model):
     image = models.ForeignKey(Image, default=None, null=True)
     name = models.CharField(max_length=128)
     votes = models.IntegerField(default=0)
-
-
-def DocTestExample():
-    """
-    >>> DocTestExample()
-    :return: True
-    """
-    return True

@@ -5,7 +5,9 @@ from django.test import TestCase
 from django.utils import timezone
 
 import class_project_1.settings
-from .models import Image, DocTestExample
+from .models import Image
+
+import doctestexample
 
 import doctest
 
@@ -32,5 +34,5 @@ class ImageModelTest(TestCase):
 
 class DocTest(TestCase):
     def test_doctests(self):
-        results = doctest.testmod(DocTestExample)
+        results = doctest.testmod(doctestexample)
         self.assertEqual(results.failed, 0)
