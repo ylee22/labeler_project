@@ -5,7 +5,9 @@ from django.test import TestCase
 from django.utils import timezone
 
 import class_project_1.settings
-from .models import Image
+from .models import Image, DocTestExample
+
+import doctest
 
 MEDIA_ROOT = class_project_1.settings.MEDIA_ROOT
 
@@ -26,3 +28,9 @@ class ImageModelTest(TestCase):
         self.assertTrue(isinstance(image, Image))
         # self.assertEqual(image.__unicode__(), image.caption)
         self.assertEqual(self.caption, image.caption)
+
+
+class DocTest(TestCase):
+    def test_doctests(self):
+        results = doctest.testmod(DocTestExample)
+        self.assertEqual(results.failed, 0)
