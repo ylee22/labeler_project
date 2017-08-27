@@ -1,13 +1,11 @@
 import os
-import datetime
 
 from django.test import TestCase
-from django.utils import timezone
 
 import class_project_1.settings
 from .models import Image
 
-import doctestexample
+import polls.doctestexample
 
 import doctest
 
@@ -34,5 +32,5 @@ class ImageModelTest(TestCase):
 
 class DocTest(TestCase):
     def test_doctests(self):
-        results = doctest.testmod(doctestexample)
+        results = doctest.testmod(polls.doctestexample)
         self.assertEqual(results.failed, 0)

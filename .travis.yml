@@ -25,8 +25,8 @@ before_script:
   - git config --global user.email "you@example.com"
   - git config --global user.name "Your Name"
 script:
-  - python manage.py test # runs django test class
-  - python setup.py test # runs other test
+  - python3 manage.py test # runs django test class
+  - python3 setup.py test # runs other test
 after_success:
   - codecov
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
